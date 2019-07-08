@@ -15,6 +15,7 @@ def get_page(): # 得到页面
     response = requests.get(url, headers=headers)  #发送请求
     #print(response.text) # 获取页面代码
     text = response.text
+    print(text)
     return text
 
 def parse_page(text):  # 解析页面
